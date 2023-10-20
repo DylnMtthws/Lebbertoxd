@@ -15,8 +15,8 @@ function Watchlist() {
 
   return (
     <div>
+      <div className="home-container">
       <h2 className="section-title" style={{color: "white"}}>Want to Watch</h2>
-      <div className="scroll-container">
         <div className="movie-row">
           {watchlist.map((movie) => (
             <MovieCard
