@@ -1,0 +1,43 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2em;
+  }
+
+  .movie-card.mx-2 {
+    background-color: #333333;
+    color: white;
+    margin: 0 1em;
+    width: 18rem;
+    padding-bottom: .25em;
+  }
+  
+  .movie-card.mx-2 .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card.mx-2 .card-title {
+    font-weight: bold;
+  }
+  
+  .movie-card.mx-2 .card-text {
+    color: white;
+    font-weight: lighter;
+  }
+  
+  .movie-card.mx-2 .btn {
+    margin-top: 1em;
+  }
+  
+  .card-icon {
+    margin-left: .85em;
+    margin-right: .85em;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .card-icon:hover {
+    color: rgba(173, 216, 230, 0.8); 
+  }

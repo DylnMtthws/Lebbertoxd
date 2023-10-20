@@ -3,8 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import {
   AiFillHome,
   AiOutlineSearch,
-  AiOutlinePlus,
   AiOutlineUser,
+  AiOutlineUnorderedList,
 } from "react-icons/ai/index";
 import "../css/NavBar.css";
 
@@ -19,8 +19,8 @@ function NavBar() {
         <NavLink to="/search" activeClassName="active-link">
           <AiOutlineSearch />
         </NavLink>
-        <NavLink to="/add-movie" activeClassName="active-link">
-          <AiOutlinePlus />
+        <NavLink to="/watchlist" activeClassName="active-link">
+          <AiOutlineUnorderedList />
         </NavLink>
         <NavLink to="/profile" activeClassName="active-link">
           <AiOutlineUser />
