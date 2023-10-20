@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import MovieCard from '../MovieCard';
 import '../../css/Search.css';
+import { FaSearch } from "react-icons/fa"
 
-function Search() {
+function Search({ topRated }) {
   const [searchInput, setSearchInput] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
@@ -18,9 +19,11 @@ function Search() {
   };
 
   return (
-    <div>
+    <div className='movie-grid-container'>
+      <FaSearch className='search-icon'/>
       <input
         type="text"
+        placeholder='Find films...'
         value={searchInput}
         onChange={handleChange}
         className='search-input'
@@ -35,7 +38,11 @@ function Search() {
         ) : (
           <p>No search results found.</p>
         )
-      ) : null}
+      ) : <div className="movie-grid">
+      {topRated.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
+      ))}
+    </div>}
     </div>
   );
 }

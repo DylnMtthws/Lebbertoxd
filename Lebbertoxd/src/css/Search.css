@@ -1,3 +1,17 @@
+.movie-grid-container {
+  height: 85vh;
+  width: 100vw;
+  overflow-y: auto;
+}
+.search-icon {
+  color: gray;
+  margin-right: .5em;
+}
+
+.search-input {
+  margin-top: .5em;
+}
+
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

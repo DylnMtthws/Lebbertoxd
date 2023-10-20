@@ -15,6 +15,7 @@ import Profile from "./pages/Profile/Profile";
 function App() {
   const [popularMovies, setPopularMovies] = useState([]);
   const [nowPlaying, setNowPlaying] = useState([]);
+  const [upcoming, setUpcoming] = useState([])
   const [topRated, setTopRated] = useState([]);
 
   useEffect(() => {
@@ -41,6 +42,12 @@ function App() {
       .then((fetchedMovies) => setNowPlaying(fetchedMovies.results));
   }, []);
 
+  useEffect(() => {
+    fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=e4b7f1c8348eee9b996ec30766c68e19')
+    .then(r => r.json())
+    .then(fetchedMovies => setUpcoming(fetchedMovies.results))
+  })
+
   const routes = createRoutesFromElements(
     <Route path="/" element={<NavBar />}>
       <Route
@@ -50,10 +57,11 @@ function App() {
             popularMovies={popularMovies}
             nowPlaying={nowPlaying}
             topRated={topRated}
+            upcoming={upcoming}
           />
         }
       />
-      <Route path="search" element={<Search />} />
+      <Route path="search" element={<Search topRated={topRated}/>} />
       <Route path="watchlist" element={<Watchlist />} />
       <Route path="profile" element={<Profile />} />
     </Route>
