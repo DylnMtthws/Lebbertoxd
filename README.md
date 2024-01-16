@@ -23,7 +23,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/username/lebbertonxd.git
-cd lebbertonxd
+cd lebbertoxd
 ```
 
 Install the dependencies:
@@ -35,16 +35,18 @@ npm install
 Start the application:
 
 ```bash
-npm start
+json-server --watch db.json
+npm run dev
 ```
 
-The application will be available at `http://localhost:3000`.
+press o to use the open command and the application will open on your default browser.
+
+The application will be available at `http://localhost:5173`.
 
 ## Dependencies
 
 - **react**: A JavaScript library for building user interfaces.
 - **react-router-dom**: Declarative routing for React.
-- **axios**: Promise-based HTTP client for the browser and node.js.
 
 ## License
 
