@@ -2,26 +2,6 @@
   "watchlist": [
     {
       "adult": false,
-      "backdrop_path": "/8pjWz2lt29KyVGoq1mXYu6Br7dE.jpg",
-      "genre_ids": [
-        28,
-        878,
-        27
-      ],
-      "id": 615656,
-      "original_language": "en",
-      "original_title": "Meg 2: The Trench",
-      "overview": "An exploratory dive into the deepest depths of the ocean of a daring research team spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival.",
-      "popularity": 657.018,
-      "poster_path": "/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
-      "release_date": "2023-08-02",
-      "title": "Meg 2: The Trench",
-      "video": false,
-      "vote_average": 6.8,
-      "vote_count": 2273
-    },
-    {
-      "adult": false,
       "backdrop_path": "/iIvQnZyzgx9TkbrOgcXx0p7aLiq.jpg",
       "genre_ids": [
         27,
@@ -38,6 +18,26 @@
       "video": false,
       "vote_average": 7.2,
       "vote_count": 1473
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/cHNqobjzfLj88lpIYqkZpecwQEC.jpg",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "id": 926393,
+      "original_language": "en",
+      "original_title": "The Equalizer 3",
+      "overview": "Robert McCall finds himself at home in Southern Italy but he discovers his friends are under the control of local crime bosses. As events turn deadly, McCall knows what he has to do: become his friends' protector by taking on the mafia.",
+      "popularity": 1336.236,
+      "poster_path": "/b0Ej6fnXAP8fK75hlyi2jKqdhHz.jpg",
+      "release_date": "2023-08-30",
+      "title": "The Equalizer 3",
+      "video": false,
+      "vote_average": 7.2,
+      "vote_count": 949
     }
   ],
   "favorites": [
@@ -195,6 +195,43 @@
       "video": false,
       "vote_average": 8.5,
       "vote_count": 3255
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lqWyKvx3qZhZAkxOXyYbOjVKuv5.jpg",
+      "genre_ids": [
+        16
+      ],
+      "id": 430844,
+      "original_language": "en",
+      "original_title": "PAW Patrol: Pups Save Christmas",
+      "overview": "Join the PAW Patrol for 7 snowy saves, including a special double-length Christmas episode! The pups gear up to fix Santa's sleigh and save Christmas, plus return penguins to their frozen home, help Everest on some snowy rescues, and more!",
+      "popularity": 3.947,
+      "poster_path": "/ehW6PdDALFp1zXmprMDJCUM4Anc.jpg",
+      "release_date": "2016-11-01",
+      "title": "PAW Patrol: Pups Save Christmas",
+      "video": false,
+      "vote_average": 8.6,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jqFjgNnxpXIXWuPsyfqmcLXRo9p.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 500,
+      "original_language": "en",
+      "original_title": "Reservoir Dogs",
+      "overview": "A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic parolee Mr. Blonde, bickering weasel Mr. Pink and Nice Guy Eddie -- unravel.",
+      "popularity": 40.544,
+      "poster_path": "/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg",
+      "release_date": "1992-09-02",
+      "title": "Reservoir Dogs",
+      "video": false,
+      "vote_average": 8.132,
+      "vote_count": 13421
     }
   ],
   "watched": [
