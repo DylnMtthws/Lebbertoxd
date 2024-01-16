@@ -1,3 +1,9 @@
+
+<img width="1434" alt="Screenshot 2024-01-16 at 10 51 49 AM" src="https://github.com/DylnMtthws/Lebbertoxd/assets/128760869/0b89728e-be28-4a5e-83c1-2bc12b9fc57b">
+
+<img width="1430" alt="Screenshot 2024-01-16 at 10 52 10 AM" src="https://github.com/DylnMtthws/Lebbertoxd/assets/128760869/e8dc1276-4525-4b54-9d30-c5a192f69ccb">
+
+
 # Lebbertoxd
 
 Lebbertoxd is a movie reviewing application built with React. It fetches data from the Movie Database API and allows users to explore popular, top-rated, currently playing, and upcoming movies. Users can also search for movies and add them to their watchlist.
