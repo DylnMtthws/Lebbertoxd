@@ -292,17 +292,17 @@ const useStore = create((set) => ({
     })),
   favorites: favoritesData,
   addToFavorites: (newFilm) =>
-    set((state) => ({ watchlist: [...state.watchlist, newFilm] })),
+    set((state) => ({ favorites: [...state.favorites, newFilm] })),
   removeFromFavorites: (filmId) =>
     set((state) => ({
-      watchlist: state.watchlist.filter((film) => film.id !== filmId),
+      favorites: state.favorites.filter((film) => film.id !== filmId),
     })),
   watched: watchedData,
   addToWatched: (newFilm) =>
-    set((state) => ({ watchlist: [...state.watchlist, newFilm] })),
+    set((state) => ({ watched: [...state.watched, newFilm] })),
   removefromWatched: (filmId) =>
     set((state) => ({
-      watchlist: state.watchlist.filter((film) => film.id !== filmId),
+      watched: state.watched.filter((film) => film.id !== filmId),
     })),
 }));
 

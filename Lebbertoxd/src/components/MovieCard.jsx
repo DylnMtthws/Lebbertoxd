@@ -56,6 +56,10 @@ function MovieCard({ movie }) {
     addToWatched(movie);
   }
 
+  function handleWatchedRemove(movie) {
+    removefromWatched(movie);
+  }
+
   function handleAddFavorites(movie) {
     // fetch("http://localhost:3000/favorites/", {
     //   method: "POST",
@@ -65,6 +69,10 @@ function MovieCard({ movie }) {
     //   body: JSON.stringify(movie),
     // });
     addToFavorites(movie);
+  }
+
+  function handleFavoriteRemove(movie) {
+    removeFromFavorites(movie);
   }
 
   const isInWatchlist = watchlist.some(
@@ -88,10 +96,18 @@ function MovieCard({ movie }) {
       />
       <MDBCardBody>
         {/* <MDBCardTitle>{movie.title}</MDBCardTitle> */}
-        <FaStar
-          className="card-icon"
-          onClick={() => handleAddFavorites(movie)}
-        />
+        {isInFavorites ? (
+          <FaStar
+            className="card-icon"
+            onClick={() => handleFavoriteRemove(movie)}
+            style={{ color: "gold" }}
+          />
+        ) : (
+          <FaStar
+            className="card-icon"
+            onClick={() => handleAddFavorites(movie)}
+          />
+        )}
         {!isInWatchlist ? (
           <FaPlus
             className="card-icon"
@@ -104,7 +120,11 @@ function MovieCard({ movie }) {
           />
         )}
         {isInWatched ? (
-          <FaEyeSlash className="card-icon" />
+          <FaEye
+            className="card-icon"
+            onClick={() => handleWatched(movie)}
+            style={{ color: "##17B169" }}
+          />
         ) : (
           <FaEye className="card-icon" onClick={() => handleWatched(movie)} />
         )}
