@@ -3,6 +3,7 @@ import "../../../css/Home.css";
 import Watched from './Watched';
 import Favorites from './Favorites';
 
+
 function Profile() {
   return (
     <div className="vertical-scroll-container">
