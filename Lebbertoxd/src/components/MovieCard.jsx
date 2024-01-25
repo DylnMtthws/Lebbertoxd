@@ -57,7 +57,7 @@ function MovieCard({ movie }) {
   }
 
   function handleWatchedRemove(movie) {
-    removefromWatched(movie);
+    removefromWatched(movie.id);
   }
 
   function handleAddFavorites(movie) {
@@ -72,7 +72,7 @@ function MovieCard({ movie }) {
   }
 
   function handleFavoriteRemove(movie) {
-    removeFromFavorites(movie);
+    removeFromFavorites(movie.id);
   }
 
   const isInWatchlist = watchlist.some(
@@ -121,9 +121,9 @@ function MovieCard({ movie }) {
         )}
         {isInWatched ? (
           <FaEye
+            onClick={() => handleWatchedRemove(movie)}
             className="card-icon"
-            onClick={() => handleWatched(movie)}
-            style={{ color: "##17B169" }}
+            style={{ color: "#17B169" }}
           />
         ) : (
           <FaEye className="card-icon" onClick={() => handleWatched(movie)} />
