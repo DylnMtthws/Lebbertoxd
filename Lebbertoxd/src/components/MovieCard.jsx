@@ -25,34 +25,14 @@ function MovieCard({ movie }) {
   } = useStore();
 
   function handlePlusClick() {
-    // fetch('http://localhost:3000/watchlist', {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(movie)
-    // })
     addToWatchlist(movie);
   }
 
   function handleWatchlistRemove(movie) {
-    // fetch(`http://localhost:3000/watchlist/${movie.id}`, {
-    //   method: "DELETE",
-    // });
     removeFromWatchlist(movie.id);
   }
 
   function handleWatched(movie) {
-    // fetch(`http://localhost:3000/watchlist/${movie.id}`, {
-    //   method: "DELETE",
-    // });
-    // fetch("http://localhost:3000/watched/", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(movie),
-    // });
     addToWatched(movie);
   }
 
@@ -61,13 +41,6 @@ function MovieCard({ movie }) {
   }
 
   function handleAddFavorites(movie) {
-    // fetch("http://localhost:3000/favorites/", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(movie),
-    // });
     addToFavorites(movie);
   }
 
