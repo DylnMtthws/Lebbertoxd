@@ -10,8 +10,8 @@ import "../css/NavBar.css";
 
 function NavBar() {
   return (
-    <div className="navbar">
-      <h1 className="header" style={{ marginLeft: ".5em" }}>
+    <div className="navbar" style={{ marginTop: "0", paddingTop: "0" }}>
+      <h1 className="header" style={{ marginLeft: ".3em" }}>
         Lebbertoxd
       </h1>
       <NavLink exact to="/" activeClassName="active-link">
@@ -24,7 +24,7 @@ function NavBar() {
         <AiOutlineUnorderedList />
       </NavLink>
       <NavLink to="/profile" activeClassName="active-link">
-        <AiOutlineUser />
+        <AiOutlineUser style={{ marginRight: ".5em" }} />
       </NavLink>
       <main>
         <Outlet />
